@@ -1,0 +1,6 @@
+<button style="margin-left: 20px; margin-top: 20px" (click)="visualizza()" type="button" class="btn btn-warning">Pietra</button>
+
+<div class="card" style="width: 200px; margin-left: 20px; margin-top: 20px" *ngIf="data!=undefined">  
+    <a>Object: {{data.data[0].name}}</a><br>
+    <img src="{{data.data[0].card_images[0].image_url}}" alt="">
+</div>
